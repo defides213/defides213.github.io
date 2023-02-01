@@ -66,22 +66,29 @@ div.firstinline {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.774);
+    background-color: rgba(0, 0, 0, 0.904);
     z-index: 2;
 }
 
 .startbutton {
     top: 50%;
     color: rgb(255, 255, 255);
+    border: solid white;
     font-family: "Ubuntu";
+}
+
+.startbutton:hover {
+    top: 50%;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.062);
 }
 
 .header {
     top: 10%;
     color: white;
-    background-color: rgb(107, 107, 104);
-    border: solid rgb(107, 107, 104) 2px; 
-    font-family: "Ubuntu";
+    border: solid rgb(255, 255, 255) 2px; 
+    padding: 10px;
 }
 
 .transform {
@@ -90,7 +97,6 @@ div.firstinline {
     font-size: 50px;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
-    font-family: "Ubuntu";
 }
 
 .w {
@@ -100,12 +106,21 @@ div.firstinline {
 .youWon {
     top: 30%;
 }
+.rules {
+    border: solid rgb(255, 255, 255) 2px;
+    color: azure;
+    font-size: 25px;
+    padding: 10px;
+    top: 23%;
+}
 
 .endingoverlay {
-    text-shadow: black 3px 3px;
-    box-shadow: 10px 10px black;
-    background-color: azure;
-    border: solid 2px black;
+    border: solid 2px rgb(255, 255, 255);
     padding: 10px;
-    color: rgb(165, 72, 202);
+    color: rgb(255, 255, 255);
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/awasomefont/Ubuntu-Medium.ttf') format('truetype');
 }
