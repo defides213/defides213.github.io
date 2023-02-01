@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+    <link rel="stylesheet" href="css/game.css">
+    <script defer src="js/game.js"></script>
+</head>
+
+<body>
+    <div class="overlay" id="overlay" >
+        <h1 class="center transform header">Numbers Game</h1>
+        <br>
+        <button class="startbutton transform buttonBorder center" onclick="startGame()"> Start Game!</button>
+    </div>
+    <div>
+        <h1 class="title">Numbers Game</h1>
+        <div id="r1b1" onclick="numbers2(this, 'r1b2', 'r2b1')" class="border buttonBorder boxfornumbers">6</div>
+        <div id="r1b2" onclick="numbers3(this, 'r1b1', 'r2b2', 'r1b3')" class="border buttonBorder boxfornumbers">2</div>
+        <div id="r1b3" onclick="numbers2(this, 'r2b3', 'r1b2')" class="border buttonBorder boxfornumbers">3</div>
+
+        <div id="r2b1" onclick="numbers3(this, 'r2b2', 'r1b1', 'r3b1')" class="border buttonBorder boxfornumbers firstinline">1
+        </div>
+        <div id="r2b2" onclick="numbers4(this, 'r1b2', 'r2b3', 'r3b2', 'r2b1')" class="border buttonBorder boxfornumbers"></div>
+        <div id="r2b3" onclick="numbers3(this, 'r1b3', 'r3b3', 'r2b2')" class="border buttonBorder boxfornumbers">8</div>
+
+        <div id="r3b1" onclick="numbers2(this, 'r2b1', 'r3b2')" class="border buttonBorder boxfornumbers firstinline">5</div>
+        <div id="r3b2" onclick="numbers3(this, 'r3b1', 'r3b3', 'r2b2')" class="border buttonBorder boxfornumbers">7</div>
+        <div id="r3b3" onclick="numbers2(this, 'r3b2', 'r2b3')" class="border buttonBorder boxfornumbers">4</div>
+    </div>
+    <div style="display: none;" class="overlay" id="overlayW">
+        <h1 class="buttonBorder transform w endingoverlay">Victory</h1>
+        <p class="transform youWon buttonBorder endingoverlay">You have won. Congratulations ⏱. <br> You did it in <span id="monkas"></span></p>
+    </div>
+    <div class="time">
+        <p>Time Elapsed </p>
+        <span class="timed" id="timer">0</span>
+    </div>
+</body>
+
+</html>
