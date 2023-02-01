@@ -111,3 +111,8 @@ p.idk {
     margin-bottom: 100px;
     /* margin: 0px; */
 }
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/awasomefont/Ubuntu-Medium.ttf') format('truetype');
+
+}
