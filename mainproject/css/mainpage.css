@@ -1,0 +1,113 @@
+.text {
+    font-family: "DINpro";
+    color: azure;
+}
+.title {
+    font-size: 40px;
+}
+.smoltext {
+    margin-bottom: -20px;
+   
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbaritem {
+    margin-left: 20px;
+}
+.navbarhead {
+    display: inline;
+    margin-right: 60px;
+}
+.icons {
+    margin-left: 30px;
+    display: inline;
+}
+.iconspace {
+    margin-left: 15px;
+}
+body {
+    /* background-image: url("../img/goodsizeimg.jpg");
+    background-repeat: no-repeat; */
+    background-color: black;
+    margin: 0;
+}
+
+.backgroundtint {
+    background-color: rgba(137, 43, 226, 0.377);
+    height: 1000px;
+}
+.line {
+    border-color: rgba(240, 255, 255, 0.219);
+}
+.header {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.middle {
+    margin-left: 50px;
+    color: rgba(240, 255, 255, 0.219);
+}
+/* div.subtitleleft {
+    border-left: 2px;
+    border-block-start: solid 2px;
+    padding: 10px;
+    border-image-source: radial-gradient(
+        circle at top left, azure, transparent 20%
+    );
+    border-inline-start: 2px solid;
+    border-image-slice: 1;
+} */
+#box1 {
+    background: rgb(76, 24, 126);
+    width: 2000px;
+    height: 1000px;
+    margin-top: 9px;
+    margin-left: -500px;
+}
+/* #somemoretext {
+    z-index: ;
+    position: absolute;
+} */
+
+#imagine {
+    margin-top: -40px;
+    margin-left: 600px;
+}
+.subtitleleft {
+    margin-top: 50px;
+    width: 200px;
+  height: 20px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: rgb(0, 0, 0);
+
+  background:
+    linear-gradient(to right, rgb(165, 72, 202) 4px, transparent 4px) 0 0,
+    /* linear-gradient(to right, azure 4px, transparent 4px) 0 100%, */
+    /* linear-gradient(to left, azure 4px, transparent 4px) 100% 0, */
+    linear-gradient(to left, rgb(165, 72, 202) 4px, transparent 4px) 100% 100%,
+    linear-gradient(to bottom, rgb(165, 72, 202) 4px, transparent 4px) 0 0,
+    /* w */
+    /* linear-gradient(to top, azure 4px, transparent 4px) 0 100%, */
+    linear-gradient(to top, rgb(165, 72, 202) 4px, transparent 4px) 100% 100%;
+
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+p.gridwork {
+    margin-left: -30%;
+}
+
+p.idk {
+    margin-top: 0px;
+    margin-bottom: 100px;
+    /* margin: 0px; */
+}

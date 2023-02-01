@@ -1,0 +1,19 @@
+to do:
+
+Navbar hover -> from "text" to "text" in a box. 
+
+box: white/opactity 20%/red or black bottom line(bottom line may be used elsewhere, like when it's on that page).
+
+fix the border for "SEE MORE ABOUT ME" to be a "framed border"
+
+Create a Grid underneath the eventual split point between top and bottom of main page 
+
+5 elements in the  bottom grid 
+
+create button functions for each "required" button element
+
+write a detailed about me page. ugh 🧛‍
+
+make sub-pages for work/school life/contact/portfolio/games/etc...
+
+create links for each sub-page 
