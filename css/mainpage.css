@@ -9,6 +9,9 @@
     margin-bottom: -20px;
    
 }
+div {
+    display: block;
+}
 
 .navbar {
     display: flex;
@@ -34,6 +37,7 @@ body {
     background-repeat: no-repeat; */
     background-color: black;
     margin: 0;
+    text-align: left;
 }
 
 .backgroundtint {
@@ -64,13 +68,13 @@ body {
     border-inline-start: 2px solid;
     border-image-slice: 1;
 } */
-#box1 {
+/* #box1 {
     background: rgb(76, 24, 126);
     width: 2000px;
     height: 1000px;
     margin-top: 9px;
     margin-left: -500px;
-}
+} */
 /* #somemoretext {
     z-index: ;
     position: absolute;
@@ -89,17 +93,25 @@ body {
   box-shadow: rgb(0, 0, 0);
 
   background:
-    linear-gradient(to right, rgb(165, 72, 202) 4px, transparent 4px) 0 0,
+    linear-gradient(to right, #00bfe7 4px, transparent 4px) 0 0,
     /* linear-gradient(to right, azure 4px, transparent 4px) 0 100%, */
     /* linear-gradient(to left, azure 4px, transparent 4px) 100% 0, */
-    linear-gradient(to left, rgb(165, 72, 202) 4px, transparent 4px) 100% 100%,
-    linear-gradient(to bottom, rgb(165, 72, 202) 4px, transparent 4px) 0 0,
+    linear-gradient(to left, #00bfe7 4px, transparent 4px) 100% 100%,
+    linear-gradient(to bottom, #00bfe7 4px, transparent 4px) 0 0,
     /* w */
     /* linear-gradient(to top, azure 4px, transparent 4px) 0 100%, */
-    linear-gradient(to top, rgb(165, 72, 202) 4px, transparent 4px) 100% 100%;
+    linear-gradient(to top, #00bfe7 4px, transparent 4px) 100% 100%;
 
   background-repeat: no-repeat;
   background-size: 20px 20px;
+}
+
+p.columns {
+    text-align: left;
+}
+
+h1, h2, h3, h4 {
+    text-align: left;
 }
 
 p.gridwork {
@@ -109,10 +121,84 @@ p.gridwork {
 p.idk {
     margin-top: 0px;
     margin-bottom: 100px;
+    text-align: center;
     /* margin: 0px; */
 }
 @font-face {
     font-family: 'Ubuntu';
     src: url('/awasomefont/Ubuntu-Medium.ttf') format('truetype');
 
+}
+
+.image {
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    border: 1px solid #00bfe7;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.section-title h2:after {
+    position: absolute;
+    left: 15px;
+    bottom: 200px;
+    height: 5px;
+    width: 70px;
+    background: #00bfe7;
+    content: "";
+}
+
+.services__item__icon {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.row {
+    display: inline-flex;
+    width: 100%;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+}
+
+.columFit {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+}
+
+.colum-uni {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.colum-1 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 100.333333%;
+    max-width: 100.333333%;
+    
+}
+
+.colum-2 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 100.666667%;
+    max-width: 100.666667%;
 }

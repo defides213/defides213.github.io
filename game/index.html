@@ -21,7 +21,7 @@
         <button class="startbutton transform buttonBorder" onclick="startGame()"> Start Game!</button>
         <div id="box" class="transform">  </div>
     </div>
-    <div>
+    <div id="numbersgame" style="display: none;">
         <h1 class="title">Numbers Game</h1>
         <div id="r1b1" onclick="numbers2(this, 'r1b2', 'r2b1')" class="border buttonBorder boxfornumbers">6</div>
         <div id="r1b2" onclick="numbers3(this, 'r1b1', 'r2b2', 'r1b3')" class="border buttonBorder boxfornumbers">2</div>
@@ -36,11 +36,11 @@
         <div id="r3b2" onclick="numbers3(this, 'r3b1', 'r3b3', 'r2b2')" class="border buttonBorder boxfornumbers">7</div>
         <div id="r3b3" onclick="numbers2(this, 'r3b2', 'r2b3')" class="border buttonBorder boxfornumbers">4</div>
     </div>
-    <div  style="display: none;" class="overlay" id="overlayW">
+    <div style="display: none;" class="overlay" id="overlayW">
         <h1 class="buttonBorder transform w endingoverlay">Victory</h1>
         <p class="transform youWon buttonBorder endingoverlay">You have won. Congratulations ⏱. <br> You did it in <span id="monkas"></span></p>
     </div>
-    <div class="time">
+    <div style="display: none;" id="numbersgametimer" class="time">
         <p>Time Elapsed </p>
         <span class="timed" id="timer">0</span>
     </div>

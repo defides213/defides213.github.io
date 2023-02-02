@@ -29,6 +29,8 @@ function startGame() {
     document.getElementById("overlay").style.display = "none";
     minutesTimer = setInterval(updateMinutes, 60000);
     secondsTimer = setInterval(updateSeconds, 1000);
+    document.getElementById("numbersgame").style.display = "block";
+    document.getElementById("numbersgametimer").style.display = "block";
 }
 function updateMinutes() {
     secondsElapsed = 0;
@@ -49,6 +51,8 @@ function checkWinner() {
     document.getElementById("r3b2").innerHTML.charAt(0) === "8")
     {
         document.getElementById("overlayW").style.display ="block";
+        document.getElementById("numbersgame").style.display = "none";
+        document.getElementById("numbersgametimer").style.display = "none";
         clearInterval(minutesTimer);
         clearInterval(secondsTimer);
         document.getElementById("monkas").innerHTML = minutesElapsed + " Minutes " + secondsElapsed + " Seconds. ";
