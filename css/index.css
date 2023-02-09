@@ -58,14 +58,6 @@ body::-webkit-scrollbar {
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
 .navbaritems {
     float: right;
     display: inline;
@@ -113,6 +105,7 @@ body::-webkit-scrollbar {
     background-color: rgb(30, 27, 46);
     justify-content: center;
     align-items: center;
+    display: flex;
     z-index: 1;
 }
 
@@ -142,17 +135,32 @@ body::-webkit-scrollbar {
 
 .container-3 {
     height: 15rem;
-    width: 30rem;
-    margin-right: 200px;
+    width: 40rem;
     padding: 20px;
-    background-color: rgb(32, 21, 36);
-    border: solid black 1px;
+    margin-left: -200px;
+}
+
+.container-3minitext {
+    color: rgb(110, 110, 110);
+    text-size-adjust: 10rem;
+}
+
+.container-3minitext-2 {
+    color: rgb(110, 110, 110);
+    text-size-adjust: 10rem;
+}
+
+.container-3-img {
+    width: 20px;
+    height: 20px;
+    color: white;
+    margin-right: 5px;
 }
 
 .testimonial-grid {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr ;
     padding-block: 1rem;
     width: min(90%, 95re1m);
     margin-inline: auto;
@@ -167,6 +175,16 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     margin-left: 300px;
+}
+
+.testimonial-grid-3 {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr ;
+    padding-block: 1rem;
+    width: min(80%, 65rem);
+    justify-content: center;
+    align-items: center;
 }
 
 .welcomemsg {
@@ -205,5 +223,20 @@ body::-webkit-scrollbar {
 
 .button:hover:before {
     width: 150%;
+}
+
+.aboutMe {
+    margin-left: 0px;
+}
+
+.aboutMe::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -15px;
+    width: 400px;
+    height: 1px;
+    margin-left: 170px;
+    background-color: black;
 }
 
