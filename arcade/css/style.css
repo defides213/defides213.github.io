@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('/awasomefont/JetBrainsMono-Medium.ttf') format('truetype');
+}
+
+body {
+    font-family: "JetBrains Mono"!important;
+    font-size: small!important;
+    background-color: rgb(66, 66, 66)!important;
+    background-image: url("../img/brickbackground.png")!important;
+}
+
+.cokc [class^="col"] >* {
+    background-color: aqua;
+    border: solid 2px rgb(49, 102, 102);
+}
+
+.bigtext {
+    font-size: 100px;
+}
+
